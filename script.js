@@ -18,6 +18,24 @@ const observer = new IntersectionObserver(entries => entries.forEach(entry => {
 }), { threshold: .12 });
 reveals.forEach(el => observer.observe(el));
 
+const autoVideos = document.querySelectorAll('video[data-autoplay]');
+if (autoVideos.length) {
+  const videoObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+    const video = entry.target;
+    if (entry.isIntersecting) {
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+    }
+  }), { threshold: .45 });
+
+  autoVideos.forEach(video => {
+    video.muted = true;
+    video.defaultMuted = true;
+    videoObserver.observe(video);
+  });
+}
+
 const filters = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project-card');
 filters.forEach(button => button.addEventListener('click', () => {

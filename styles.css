@@ -42,3 +42,67 @@
 .area-card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
 @media(max-width:950px){.area-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.area-grid{grid-template-columns:1fr}.line-icon{margin:28px 0 20px}}
+
+/* Supplied project photography */
+.hero>img{object-position:center 35%}
+.service-showcase{background:#18231f;color:#fff}
+.service-showcase .section-head>p{color:#aeb7b2}
+.showcase-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:repeat(2,280px);gap:14px}
+.showcase-card{position:relative;overflow:hidden;margin:0;background:#101713}
+.showcase-card.showcase-wide{grid-row:span 2}
+.showcase-card:nth-child(4){grid-column:2/4}
+.showcase-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease,filter .4s ease}
+.showcase-card:hover img{transform:scale(1.04);filter:saturate(1.08)}
+.showcase-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,12,9,.82),transparent 58%);pointer-events:none}
+.showcase-card figcaption{position:absolute;z-index:2;left:24px;right:24px;bottom:20px;display:grid;grid-template-columns:auto 1fr;gap:3px 13px;align-items:center}
+.showcase-card figcaption span{grid-row:1/3;color:#f09a65;font-size:10px;letter-spacing:.14em}
+.showcase-card figcaption strong{font:700 17px var(--serif)}
+.showcase-card figcaption small{color:#bdc6c1;font-size:10px;letter-spacing:.06em}
+@media(max-width:950px){.showcase-grid{grid-template-columns:1fr 1fr;grid-template-rows:420px 260px 260px}.showcase-card.showcase-wide{grid-column:1/-1;grid-row:auto}.showcase-card:nth-child(4){grid-column:1/-1}}
+@media(max-width:680px){.hero>img{object-position:42% center}.showcase-grid{grid-template-columns:1fr;grid-template-rows:repeat(4,270px)}.showcase-card.showcase-wide,.showcase-card:nth-child(4){grid-column:auto}.showcase-card figcaption{left:18px;right:18px}.service-showcase{padding-top:70px;padding-bottom:70px}}
+
+/* Completed residence portfolio */
+.project-detail-hero{height:calc(100vh - 122px);min-height:620px;position:relative;overflow:hidden;color:#fff;background:var(--dark)}
+.project-detail-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.project-detail-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,13,.76),rgba(10,16,13,.12) 65%),linear-gradient(0deg,rgba(8,13,10,.82),transparent 55%)}
+.project-detail-copy{position:absolute;z-index:2;left:7vw;right:7vw;bottom:72px;max-width:820px}
+.project-detail-copy h1{font:500 clamp(52px,7vw,100px)/.92 var(--serif);letter-spacing:-.06em;margin:22px 0 24px}
+.project-detail-copy h1 span{font-weight:800;color:#f09a65}
+.project-detail-copy>p{max-width:650px;color:#dce2de;font-size:17px;line-height:1.7}
+.back-link{display:inline-flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid #ffffff70;padding-bottom:7px}
+.project-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.project-tags span{border:1px solid #ffffff38;padding:8px 12px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;background:#101a1670;backdrop-filter:blur(8px)}
+.project-overview{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;align-items:start}
+.project-overview-copy>p:first-child{font:500 clamp(24px,3vw,38px)/1.4 var(--serif);color:var(--ink);margin-top:0}
+.project-overview-copy p{color:var(--muted);line-height:1.8}
+.portfolio-gallery{background:#eae5da}
+.residence-gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:250px;gap:14px}
+.residence-gallery figure{position:relative;overflow:hidden;margin:0;background:#d7d0c3}
+.residence-gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.residence-gallery figure:nth-child(2){grid-column:span 5}
+.residence-gallery figure:nth-child(3){grid-column:span 5}
+.residence-gallery figure:nth-child(4),.residence-gallery figure:nth-child(5),.residence-gallery figure:nth-child(6){grid-column:span 4}
+.residence-gallery figure:nth-child(7){grid-column:span 12;grid-row:span 2}
+.residence-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease}
+.residence-gallery figure:hover img{transform:scale(1.035)}
+.residence-gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:45px 20px 18px;color:#fff;font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(0deg,rgba(8,13,10,.72),transparent)}
+.project-films{background:var(--dark);color:#fff}
+.project-films .section-head>p{color:#aeb7b2}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.video-card{margin:0;background:#111a16;border:1px solid #ffffff17}
+.video-card.featured{grid-column:1/-1}
+.video-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#080b09}
+.video-card figcaption{padding:20px 22px 24px;display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.video-card strong{font:700 18px var(--serif)}
+.video-card span{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#f09a65}
+.project-next{background:var(--accent);color:#fff;padding:75px 7vw;display:flex;align-items:center;justify-content:space-between;gap:35px}
+.project-next h2{font:500 clamp(34px,4vw,58px)/1.05 var(--serif);letter-spacing:-.04em;margin:0}
+.project-next .btn{background:#17211d}
+@media(max-width:950px){.project-detail-hero{height:760px}.project-overview{grid-template-columns:1fr;gap:35px}.residence-gallery{grid-auto-rows:220px}.residence-gallery figure:nth-child(n){grid-column:span 6}.residence-gallery figure:nth-child(1),.residence-gallery figure:nth-child(7){grid-column:span 12;grid-row:span 2}}
+@media(max-width:680px){.project-detail-hero{height:700px;min-height:0}.project-detail-hero>img{object-position:58% center}.project-detail-copy{left:22px;right:22px;bottom:45px}.project-detail-copy h1{font-size:52px}.project-detail-copy>p{font-size:15px}.residence-gallery{grid-template-columns:1fr;grid-auto-rows:280px}.residence-gallery figure:nth-child(n){grid-column:auto;grid-row:auto}.residence-gallery figure:nth-child(1),.residence-gallery figure:nth-child(7){grid-column:auto;grid-row:auto}.video-grid{grid-template-columns:1fr}.video-card.featured{grid-column:auto}.video-card figcaption{padding:17px;display:block}.video-card span{display:block;margin-top:7px}.project-next{padding:60px 22px;display:block}.project-next .btn{margin-top:28px}}
+
+/* Interior design portfolio */
+.interior-project-hero>img{object-position:center 56%}
+.interior-gallery figure:nth-child(6){grid-column:span 4}
+@media(max-width:950px){.interior-gallery figure:nth-child(6){grid-column:span 6}}
+@media(max-width:680px){.interior-project-hero>img{object-position:58% center}.interior-project-hero .project-detail-copy{max-width:calc(100vw - 44px)}.interior-project-hero .project-tags{max-width:100%}.interior-gallery figure:nth-child(6){grid-column:auto}}
