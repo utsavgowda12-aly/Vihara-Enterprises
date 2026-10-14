@@ -106,3 +106,189 @@
 .interior-gallery figure:nth-child(6){grid-column:span 4}
 @media(max-width:950px){.interior-gallery figure:nth-child(6){grid-column:span 6}}
 @media(max-width:680px){.interior-project-hero>img{object-position:58% center}.interior-project-hero .project-detail-copy{max-width:calc(100vw - 44px)}.interior-project-hero .project-tags{max-width:100%}.interior-gallery figure:nth-child(6){grid-column:auto}}
+
+/* Premium homepage services */
+.services{position:relative;isolation:isolate;padding-top:115px;padding-bottom:130px;background:radial-gradient(circle at 92% 8%,#e4b18f26,transparent 30%),linear-gradient(180deg,#f7f4ed 0%,#eee9de 100%);overflow:hidden}
+.services:before{content:"";position:absolute;z-index:-1;width:420px;height:420px;right:-220px;bottom:-220px;border:1px solid #d66b3230;border-radius:50%;box-shadow:0 0 0 55px #d66b3208,0 0 0 110px #d66b3206}
+.services .section-head{padding-bottom:40px;border-bottom:1px solid #cfc8bb;margin-bottom:28px}
+.services .section-head>p{font-size:15px;max-width:480px}
+.service-grid{border:0;gap:16px}
+.service-card{isolation:isolate;overflow:hidden;min-height:430px;padding:34px 34px 38px;border:1px solid #d4cec1;background:#fbfaf6cc;box-shadow:0 20px 55px #19211e0a;transition:transform .4s ease,box-shadow .4s ease,background .4s ease,border-color .4s ease}
+.service-card:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(145deg,transparent 55%,#d66b320a);opacity:0;transition:.4s}
+.service-card:after{content:"";position:absolute;left:0;top:0;width:0;height:3px;background:var(--accent);transition:width .45s ease}
+.service-card:hover{background:#fff;border-color:#d66b3260;box-shadow:0 28px 65px #19211e18;transform:translateY(-8px)}
+.service-card:hover:before{opacity:1}.service-card:hover:after{width:100%}
+.service-card .service-num{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.12em;color:#89918d}
+.service-card .service-num:after{content:"SERVICE";font-size:8px;letter-spacing:.2em;color:#a9aea9}
+.service-card .line-icon{width:62px;height:62px;margin:62px 0 30px;border:1px solid #d66b3245;background:#d66b320a;border-radius:50%;transform:none}
+.service-card .line-icon .premium-icon{width:28px;height:28px}
+.service-card h3{font-size:24px;letter-spacing:-.025em;margin:0 0 17px}
+.service-card p{font-size:14px;line-height:1.75;margin:0;max-width:330px}
+.service-card>a{width:38px;height:38px;right:28px;top:27px;border:1px solid #c9c4b9;border-radius:50%;display:grid;place-items:center;font-size:16px;transition:.3s}
+.service-card:hover>a{color:#fff;background:var(--accent);border-color:var(--accent);transform:rotate(45deg)}
+.service-card-featured{background:linear-gradient(145deg,#203029,#111b17);border-color:#2d3d36;color:#fff;box-shadow:0 26px 70px #1018132b}
+.service-card-featured:before{opacity:1;background:radial-gradient(circle at 85% 95%,#d66b3238,transparent 42%)}
+.service-card-featured .service-num,.service-card-featured .service-num:after{color:#aeb9b3}
+.service-card-featured .line-icon{background:#d66b32;color:#fff;border-color:#d66b32;box-shadow:0 12px 30px #d66b3230}
+.service-card-featured p{color:#b8c2bd}.service-card-featured>a{border-color:#ffffff35}.service-card-featured:hover{background:linear-gradient(145deg,#263a31,#14211b);border-color:#d66b3280}
+
+/* Premium pricing experience */
+.pricing{position:relative;isolation:isolate;background:linear-gradient(145deg,#e9e3d7 0%,#f7f4ed 48%,#e7dfd1 100%);overflow:hidden}
+.pricing:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,transparent 49.9%,#cfc8bb45 50%,transparent 50.1%);background-size:110px 100%;opacity:.3}
+.pricing .section-head{margin-bottom:70px}.pricing .section-head>p{max-width:500px;font-size:15px}
+.price-wrap{grid-template-columns:minmax(0,1.9fr) minmax(310px,.72fr);gap:30px;align-items:stretch}
+.price-cards{gap:16px;align-items:stretch}
+.price-card{position:relative;overflow:hidden;min-height:480px;padding:38px 30px 32px;border:1px solid #cec7b9;background:#faf9f5d9;box-shadow:0 18px 50px #18201d0b;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease,background .4s ease}
+.price-card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:#c9c2b4;transition:.35s}
+.price-card:hover{background:#fff;border-color:#d66b3270;box-shadow:0 28px 65px #18201d18;transform:translateY(-8px)}
+.price-card:hover:before{background:var(--accent)}
+.price-card.active{background:linear-gradient(155deg,#23342d,#111b17);border-color:#23342d;color:#fff;box-shadow:0 30px 75px #10181330;transform:translateY(-12px)}
+.price-card.active:before{height:5px;background:var(--accent)}
+.price-card.active:hover{background:linear-gradient(155deg,#2a4036,#14211b)}
+.price-card>span{min-height:42px;font-size:9px;font-weight:700;letter-spacing:.18em}
+.price-card.active>span{color:#f3a171}
+.price-card>strong{display:block;font-size:36px;letter-spacing:-.04em;margin-bottom:24px}.price-card strong small{margin-left:5px}
+.price-card.active strong small,.price-card.active p,.price-card.active ul{color:#bdc6c1}
+.price-card p{font-size:13px;line-height:1.7;min-height:72px;margin-bottom:22px}
+.price-card ul{border-top:1px solid #cfc9bd;padding-top:20px;line-height:1.7}
+.price-card.active ul{border-color:#ffffff22}
+.price-card li{display:flex;gap:8px;margin:10px 0}.price-card li:before{flex:0 0 auto}
+.calculator{position:relative;overflow:hidden;padding:44px 38px;background:linear-gradient(155deg,#1f3029,#101814);box-shadow:0 32px 75px #1018132b;border:1px solid #ffffff13}
+.calculator:after{content:"";position:absolute;width:240px;height:240px;right:-125px;top:-125px;border:1px solid #d66b3255;border-radius:50%;box-shadow:0 0 0 38px #d66b3208,0 0 0 76px #d66b3206;pointer-events:none}
+.calculator h3{font-size:32px;letter-spacing:-.035em;margin-bottom:12px}.calculator-intro{color:#93a09a;font-size:12px;line-height:1.6;margin:0 0 42px;max-width:270px}
+.calculator label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#aeb8b3}.calculator label span{color:#fff;font-size:12px;letter-spacing:0;text-transform:none}
+.calculator input{height:4px;margin:24px 0 42px}
+.calculator input::-webkit-slider-thumb{width:18px;height:18px;border-radius:50%;background:#f09a65;box-shadow:0 0 0 6px #f09a6520;cursor:pointer}
+.calc-row{padding:17px 0}.estimate{margin-top:5px;padding:28px 0 8px}.estimate strong{font-size:39px;letter-spacing:-.035em}.calculator .full{margin-top:24px}
+
+/* Premium delivery process */
+.process{position:relative;isolation:isolate;background:linear-gradient(145deg,#1d2c26,#0f1814);color:#fff;overflow:hidden}
+.process:before{content:"";position:absolute;z-index:-1;left:-170px;top:-170px;width:430px;height:430px;border:1px solid #ffffff0d;border-radius:50%;box-shadow:0 0 0 65px #ffffff05,0 0 0 130px #ffffff03}
+.process .section-head{align-items:end;margin-bottom:65px}.process .section-head h2{color:#fff}.process .section-head h2 span{color:#f09a65}.process .section-head>p{color:#9eaaa4;max-width:490px;font-size:15px}
+.process-list{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:0;border:1px solid #ffffff17;background:#ffffff17}
+.process-list article,.process-list article+article{position:relative;overflow:hidden;min-height:330px;padding:30px 28px 34px;background:#17241f;border:0;transition:background .35s ease,transform .35s ease}
+.process-list article:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:3px;background:var(--accent);transition:right .4s ease}
+.process-list article:hover{z-index:2;background:#20322a;transform:translateY(-5px)}.process-list article:hover:after{right:0}
+.process-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:58px}.process-list b{width:35px;height:35px;border:1px solid #ffffff28;border-radius:50%;display:grid;place-items:center;color:#f09a65;font-size:9px}
+.process-icon{width:44px;height:44px;border:1px solid #ffffff18;display:grid;place-items:center;color:#f09a65;background:#ffffff05}.process-icon .premium-icon{width:21px;height:21px}
+.process-list small{display:block;color:#78867f;font-size:8px;font-weight:700;letter-spacing:.2em}.process-list h3{font-size:25px;margin:15px 0 14px;color:#fff}.process-list p{color:#aeb8b3;font-size:13px;line-height:1.75;margin:0}
+
+@media(max-width:1100px){.price-wrap{grid-template-columns:1fr}.price-card{min-height:440px}.calculator{display:grid;grid-template-columns:1fr 1fr;column-gap:45px}.calculator>.eyebrow,.calculator>h3,.calculator>.calculator-intro,.calculator>label,.calculator>input,.calculator>.full{grid-column:1}.calculator>.calc-row,.calculator>.estimate{grid-column:2}.calculator>.calc-row:first-of-type{align-self:end}.calculator>.full{align-self:end}.process-list article,.process-list article+article{padding:28px 22px 32px}}
+@media(max-width:950px){.service-grid{grid-template-columns:1fr}.service-card{min-height:360px}.service-card .line-icon{margin:42px 0 28px}.process-list{grid-template-columns:repeat(2,1fr)}.process-list article,.process-list article+article{min-height:300px}.calculator{display:block}}
+@media(max-width:680px){.services{padding-top:80px;padding-bottom:85px}.services .section-head{padding-bottom:28px}.service-grid{gap:12px}.service-card{min-height:340px;padding:28px}.service-card .line-icon{margin:38px 0 26px}.pricing .section-head{margin-bottom:45px}.price-card{min-height:auto;padding:34px 27px}.price-card.active{transform:none}.price-card:hover{transform:translateY(-4px)}.calculator{padding:34px 25px}.process .section-head{margin-bottom:42px}.process-list{grid-template-columns:1fr}.process-list article,.process-list article+article{min-height:275px;padding:27px;border-bottom:0}.process-top{margin-bottom:40px}}
+
+/* Prevent oversized hero imagery on unusually tall displays. */
+.hero{max-height:980px}
+
+/* Devotional mural portfolio and physical address */
+.contact-details address{font:400 13px/1.75 var(--body);font-style:normal;color:#9fa9a4;margin-top:8px;max-width:360px}
+.footer-address{font-style:normal;font-size:12px;line-height:1.75;max-width:390px;color:#9da8a2}
+.devotional-project-hero>img{object-position:center 54%}
+.devotional-project-hero:after{background:linear-gradient(90deg,rgba(10,16,13,.82),rgba(10,16,13,.22) 64%,rgba(10,16,13,.08)),linear-gradient(0deg,rgba(8,13,10,.82),transparent 58%)}
+.residence-gallery.devotional-gallery figure:nth-child(1){grid-column:span 8;grid-row:span 2}
+.residence-gallery.devotional-gallery figure:nth-child(2),.residence-gallery.devotional-gallery figure:nth-child(3){grid-column:span 4;grid-row:span 1}
+.residence-gallery.devotional-gallery figure:nth-child(4){grid-column:span 12;grid-row:span 2}
+.devotional-gallery figure:nth-child(1) img{object-position:center 52%}
+.devotional-gallery figure:nth-child(4) img{object-position:center 48%}
+.devotional-video-grid .video-card{position:relative;overflow:hidden;box-shadow:0 20px 55px #05090735}
+@media(max-width:950px){.residence-gallery.devotional-gallery figure:nth-child(1),.residence-gallery.devotional-gallery figure:nth-child(4){grid-column:span 12;grid-row:span 2}.residence-gallery.devotional-gallery figure:nth-child(2),.residence-gallery.devotional-gallery figure:nth-child(3){grid-column:span 6;grid-row:span 1}}
+@media(max-width:680px){.devotional-project-hero>img{object-position:43% center}.devotional-project-hero .project-detail-copy{max-width:calc(100vw - 44px)}.devotional-project-hero .project-detail-copy h1{font-size:47px}.residence-gallery.devotional-gallery figure:nth-child(n){grid-column:auto;grid-row:auto}.footer-address{max-width:330px}}
+
+/* Electrical works portfolio */
+.project-grid{grid-template-columns:1.15fr .85fr .85fr}
+.electrical-project-card{grid-column:2/4}
+.electrical-project-card img{object-position:center 47%}
+.project-grid.filtered{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-template-rows:390px}
+.project-grid.filtered .project-card:not(.hidden){grid-column:auto;grid-row:auto}
+.electrical-project-hero>img{object-position:center 48%}
+.project-detail-hero{max-height:980px}
+.electrical-project-hero:after{background:linear-gradient(90deg,rgba(7,13,10,.86),rgba(7,13,10,.24) 66%),linear-gradient(0deg,rgba(7,12,9,.78),transparent 55%)}
+.residence-gallery.electrical-ats-gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.residence-gallery.electrical-ats-gallery figure:nth-child(2),.residence-gallery.electrical-ats-gallery figure:nth-child(3){grid-column:span 5;grid-row:span 1}
+.electrical-ats-gallery figure:nth-child(2) img,.electrical-ats-gallery figure:nth-child(3) img{object-position:center 42%}
+.pump-installation-section{background:linear-gradient(145deg,#1d2c26,#0f1814);color:#fff}
+.pump-installation-section .section-head>p{color:#aeb7b2}
+.residence-gallery.pump-installation-gallery figure:nth-child(1){grid-column:span 4;grid-row:span 2}
+.residence-gallery.pump-installation-gallery figure:nth-child(2),.residence-gallery.pump-installation-gallery figure:nth-child(3),.residence-gallery.pump-installation-gallery figure:nth-child(4),.residence-gallery.pump-installation-gallery figure:nth-child(5){grid-column:span 4;grid-row:span 1}
+.residence-gallery.pump-installation-gallery figure:nth-child(6){grid-column:span 12;grid-row:span 2}
+.pump-installation-gallery figure{background:#111a16}
+.pump-installation-gallery figure:nth-child(1) img{object-position:center 56%}
+.pump-installation-gallery figure:nth-child(2) img{object-position:center 62%}
+@media(max-width:950px){.project-grid{grid-template-columns:1.15fr .85fr;grid-template-rows:repeat(3,340px)}.project-card.large{grid-row:span 2}.electrical-project-card{grid-column:1/-1}.residence-gallery.electrical-ats-gallery figure:nth-child(1){grid-column:span 12;grid-row:span 2}.residence-gallery.electrical-ats-gallery figure:nth-child(2),.residence-gallery.electrical-ats-gallery figure:nth-child(3){grid-column:span 6;grid-row:span 1}.residence-gallery.pump-installation-gallery figure:nth-child(1){grid-column:span 12;grid-row:span 2}.residence-gallery.pump-installation-gallery figure:nth-child(n+2){grid-column:span 6;grid-row:span 1}.residence-gallery.pump-installation-gallery figure:nth-child(6){grid-column:span 12;grid-row:span 2}.project-grid.filtered{grid-template-rows:390px}}
+@media(max-width:680px){.project-grid,.project-grid.filtered{grid-template-columns:1fr;grid-template-rows:repeat(4,390px)}.project-card.large,.electrical-project-card,.project-grid.filtered .project-card:not(.hidden){grid-column:auto;grid-row:auto}.project-grid.filtered{grid-template-rows:390px}.electrical-project-hero>img{object-position:54% center}.electrical-project-hero .project-detail-copy h1{font-size:52px}.residence-gallery.electrical-ats-gallery figure:nth-child(n),.residence-gallery.pump-installation-gallery figure:nth-child(n){grid-column:auto;grid-row:auto}}
+
+/* Drainage portfolio */
+.project-grid .electrical-project-card,.drainage-project-card{grid-column:auto}
+.drainage-project-card img{object-position:center 53%}
+.drainage-project-hero>img{object-position:center 48%}
+.drainage-project-hero:after{background:linear-gradient(90deg,rgba(8,14,11,.86),rgba(8,14,11,.2) 68%),linear-gradient(0deg,rgba(7,12,9,.8),transparent 58%)}
+.drainage-section{background:#eae5da}
+.residence-gallery.drainage-gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.residence-gallery.drainage-gallery figure:nth-child(2),.residence-gallery.drainage-gallery figure:nth-child(3){grid-column:span 5;grid-row:span 1}
+.residence-gallery.drainage-gallery figure:nth-child(4),.residence-gallery.drainage-gallery figure:nth-child(5),.residence-gallery.drainage-gallery figure:nth-child(6){grid-column:span 4;grid-row:span 1}
+.residence-gallery.drainage-gallery figure:nth-child(7){grid-column:span 6;grid-row:span 2}
+.residence-gallery.drainage-gallery figure:nth-child(8),.residence-gallery.drainage-gallery figure:nth-child(9){grid-column:span 6;grid-row:span 1}
+.drainage-gallery figure:nth-child(1) img{object-position:center 58%}
+.drainage-gallery figure:nth-child(4) img{object-position:center 60%}
+@media(max-width:950px){.residence-gallery.drainage-gallery figure:nth-child(1),.residence-gallery.drainage-gallery figure:nth-child(7){grid-column:span 12;grid-row:span 2}.residence-gallery.drainage-gallery figure:nth-child(2),.residence-gallery.drainage-gallery figure:nth-child(3),.residence-gallery.drainage-gallery figure:nth-child(n+4):nth-child(-n+6),.residence-gallery.drainage-gallery figure:nth-child(8),.residence-gallery.drainage-gallery figure:nth-child(9){grid-column:span 6;grid-row:span 1}}
+@media(max-width:680px){.project-grid,.project-grid.filtered{grid-template-rows:repeat(5,390px)}.project-grid.filtered{grid-template-rows:390px}.drainage-project-hero>img{object-position:50% center}.drainage-project-hero .project-detail-copy h1{font-size:52px}.residence-gallery.drainage-gallery figure:nth-child(n){grid-column:auto;grid-row:auto}}
+
+/* Scroll-aware navigation */
+.header{position:sticky;top:0;z-index:100;transition:transform .38s cubic-bezier(.22,.61,.36,1),box-shadow .3s ease;background:rgba(244,241,233,.96);backdrop-filter:blur(18px);box-shadow:0 1px 0 #18201d0d}
+.header.header-hidden{transform:translateY(-110%);box-shadow:none}
+
+/* Connected specialist project stories */
+.related-projects{background:#f4f1e9}
+.related-projects-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:46px}
+.related-projects-head h2{font:500 clamp(38px,4.5vw,64px)/1 var(--serif);letter-spacing:-.05em;margin:0}
+.related-projects-head h2 span{font-weight:800}
+.related-project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.related-project-card{position:relative;isolation:isolate;min-height:430px;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:#17211d;box-shadow:0 20px 55px #111a1620}
+.related-project-card:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(9,15,12,.92),rgba(9,15,12,.08) 72%)}
+.related-project-card img{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .65s ease}
+.related-project-card:hover img{transform:scale(1.045)}
+.related-project-card>span{font-size:9px;font-weight:700;letter-spacing:.18em;color:#f4a16f;margin-bottom:12px}
+.related-project-card>strong{font:600 clamp(23px,2.4vw,34px)/1.1 var(--serif);letter-spacing:-.035em;max-width:420px}
+.related-project-card>b{margin-top:22px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+
+/* Specialist service cards */
+.catalog-card{position:relative;display:flex;flex-direction:column}
+.catalog-card ul{margin-bottom:24px}
+.catalog-link{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid #d1ccc0;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.catalog-link span{color:var(--accent);font-size:16px}
+.catalog-card-featured{background:linear-gradient(150deg,#203129,#101915);color:#fff;border-color:#2b3b34}
+.catalog-card-featured p,.catalog-card-featured ul{color:#b8c2bd}
+.catalog-card-featured .catalog-link{color:#fff;border-color:#ffffff24}
+.catalog-card-featured:hover{background:linear-gradient(150deg,#273d33,#132019)}
+
+/* Premium expert consultation popup */
+body.popup-open{overflow:hidden}
+.expert-popup{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease}
+.expert-popup.is-open{opacity:1;visibility:visible}
+.expert-popup-backdrop{position:absolute;inset:0;border:0;background:rgba(8,14,11,.75);backdrop-filter:blur(8px);cursor:pointer}
+.expert-popup-panel{position:relative;width:min(780px,100%);padding:58px 60px 52px;background:radial-gradient(circle at 100% 0,#d66b3238,transparent 34%),linear-gradient(145deg,#22342c,#101915 70%);color:#fff;box-shadow:0 45px 110px #05090680;border:1px solid #ffffff1c;transform:translateY(26px) scale(.975);transition:transform .4s cubic-bezier(.22,.61,.36,1);overflow:hidden}
+.expert-popup.is-open .expert-popup-panel{transform:none}
+.expert-popup-panel:after{content:"";position:absolute;right:-120px;bottom:-165px;width:320px;height:320px;border:1px solid #ffffff12;border-radius:50%;box-shadow:0 0 0 45px #ffffff05,0 0 0 90px #ffffff03;pointer-events:none}
+.expert-popup-close{position:absolute;z-index:5;right:22px;top:22px;width:42px;height:42px;border:1px solid #ffffff45;border-radius:50%;background:#17241f;color:#fff;font-size:25px;line-height:1;display:grid;place-items:center;cursor:pointer;transition:.25s;opacity:1;visibility:visible}
+.expert-popup-close:hover{background:var(--accent);border-color:var(--accent);transform:rotate(90deg)}
+.expert-popup-mark{width:48px;height:48px;border:1px solid #f2a071;color:#f2a071;display:grid;place-items:center;transform:rotate(45deg);font:800 11px var(--serif);margin-bottom:34px}
+.expert-popup-mark::first-line{transform:rotate(-45deg)}
+.expert-popup-panel h2{font:500 clamp(38px,5vw,64px)/.98 var(--serif);letter-spacing:-.055em;margin:0;max-width:680px}
+.expert-popup-panel h2 span{font-weight:800;color:#f3a171}
+.expert-popup-copy{max-width:650px;color:#b9c3be;font-size:15px;line-height:1.75;margin:25px 0}
+.expert-popup-types{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.expert-popup-types span{border:1px solid #ffffff20;padding:8px 11px;color:#d4dad6;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.expert-popup-actions{position:relative;z-index:2;display:flex;align-items:center;gap:28px}
+.expert-popup-actions .btn{display:inline-flex!important;opacity:1!important;visibility:visible!important;position:relative!important;inset:auto!important;min-width:225px;background:var(--accent)!important;color:#fff!important}
+.expert-phone{display:flex;flex-direction:column;gap:4px}
+.expert-phone small{font-size:8px;letter-spacing:.18em;color:#84918b}
+.expert-phone strong{font:600 17px var(--serif)}
+
+@media(max-width:680px){
+  .related-projects-head{display:block}.related-projects-head .arrow-link{margin-top:28px}.related-project-grid{grid-template-columns:1fr}.related-project-card{min-height:330px;padding:25px}
+  .expert-popup{padding:14px}.expert-popup-panel{padding:44px 24px 32px}.expert-popup-close{right:15px;top:15px}.expert-popup-mark{margin-bottom:27px}.expert-popup-panel h2{font-size:38px}.expert-popup-copy{font-size:13px;margin:20px 0}.expert-popup-types{margin-bottom:26px}.expert-popup-actions{align-items:stretch;flex-direction:column;gap:18px}.expert-popup-actions .btn{width:100%}.expert-phone{align-items:center}
+}
+
+/* Compact footer after removing the address block. */
+footer{grid-template-columns:1fr 1fr}
+@media(max-width:680px){footer{grid-template-columns:1fr}}
