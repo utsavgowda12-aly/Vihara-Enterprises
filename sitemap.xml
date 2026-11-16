@@ -1,51 +1,61 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.viharaenterprises.in/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://www.viharaenterprises.com/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/services.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://www.viharaenterprises.com/services.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/about.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://www.viharaenterprises.com/about.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/completed-residence.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://www.viharaenterprises.com/completed-residence.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/interior-design.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <loc>https://www.viharaenterprises.com/interior-design.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/devotional-mural.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <loc>https://www.viharaenterprises.com/devotional-mural.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/electrical-works.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <loc>https://www.viharaenterprises.com/electrical-works.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.viharaenterprises.in/drainage.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <loc>https://www.viharaenterprises.com/drainage.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
 </urlset>
